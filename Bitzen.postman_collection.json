@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "78ce8961-5088-4918-9f5e-8af02bc1fd44",
+		"name": "Bitzen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9996339"
+	},
+	"item": [
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Bernardo Souza\",\r\n  \"cpf\": \"11055652973\",\r\n  \"dataNascimento\": \"1999-10-25\",\r\n  \"contatos\": [\r\n    {\r\n      \"nome\": \"Contato\",\r\n      \"telefone\": \"123456789\",\r\n      \"email\": \"contato@contato.com\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Pessoa",
+					"host": [
+						"Pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pessoa Paginado",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Bernardo Atualizado\",\r\n  \"cpf\": \"11055652973\",\r\n  \"dataNascimento\": \"1990-01-02\",\r\n  \"contatos\": [\r\n    {\r\n      \"nome\": \"Contato Bernardo Atualizado\",\r\n      \"telefone\": \"987654321\",\r\n      \"email\": \"contato2@atualizado.com\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
